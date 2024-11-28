@@ -1,0 +1,11 @@
+<!-- pages/notes-list/notes-list.wxml -->
+<view class="page">
+  <button class="new-note-btn" bindtap="onArticleClick" data-id="0">✍</button>
+
+  <view wx:for="{{articles}}" wx:key="id" class="article-item" bindtap="onArticleClick" data-id="{{item.id}}">
+    <view class="category">{{item.category.name}}</view>
+    <view class="title">{{item.title}}</view>
+  </view>
+
+  <loading wx:if="{{isLoading}}" />
+</view>

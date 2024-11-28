@@ -1,0 +1,16 @@
+<!-- pages/login/login.wxml -->
+<view class="login-container">
+  <view class="form">
+    <image class="logo" src="/images/logo-C9NmGcqs.png" />
+
+    <input type="text" placeholder="邮箱" bindinput="onEmailChange" value="{{email}}" />
+    <input type="password" placeholder="密码" bindinput="onPasswordChange" value="{{password}}" />
+
+    <view class="checkbox-container">
+      <checkbox bindtap="onAutoLoginChange" checked="{{autoLogin}}">自动登录</checkbox>      
+    </view>
+
+    <button class="login-button" bindtap="onLogin">登录</button>
+  </view>
+  <label class="bottom">Based on delay.notes</label>
+</view>

@@ -1,0 +1,21 @@
+/* app.wxss */
+
+/* 全局背景和文字颜色，根据系统的夜间模式调整 */
+page {
+  background-color: #ffffff;
+  color: #000;
+  --meta: #666;
+  --border: #ccc;
+  --form-bg: #F2F2F2;
+}
+
+/* 夜间模式适配 */
+@media (prefers-color-scheme: dark) {
+  page {
+    background-color: #383838;
+    color: #ecf0f1;
+    --meta1: #ddd;
+    --border: #333;
+    --form-bg: #383838;
+  }
+}

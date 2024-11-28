@@ -1,0 +1,63 @@
+/* 编辑器容器 */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* 标题输入框样式 */
+.editor-container .title-input {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+}
+
+/* category（类别）显示样式 */
+.editor-container .category-input {
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 100%;
+  color: var(--meta);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* 标签显示样式 */
+.editor-container .tags {
+  font-size: 14px;
+  color: #999;
+  margin-bottom: 10px;
+}
+
+/* Markdown 编辑框 */
+.editor-container .body-textarea {
+  width: 100%;
+  font-size: 16px;
+  min-height: 200px;
+  box-sizing: border-box;
+  padding-bottom: 200px;
+  overflow: hidden;
+  resize: none;
+  margin-top: 20px;
+}
+
+/* 按钮样式 */
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+}
+
+.button-container button{
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+  max-width: 50px;
+  background-color: transparent;
+}

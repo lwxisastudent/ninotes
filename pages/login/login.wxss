@@ -1,0 +1,69 @@
+/* pages/login/login.wxss */
+.login-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  .logo{
+    background-color: #f8f9fa;
+  }
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.form {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  padding: 3px;
+  border-radius: 18px;
+  margin: 0 calc(50% - 33px);
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  height: 90rpx;
+  padding: 20rpx;
+  background-color: var(--border);
+  border-radius: 10rpx;
+  font-size: 32rpx;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  margin-bottom: 20px;
+}
+
+.login-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+}
+
+.login-button:active {
+  background-color: #0056b3;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 50px;
+  color: var(--meta);
+}

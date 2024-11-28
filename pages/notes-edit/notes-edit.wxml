@@ -1,0 +1,19 @@
+<!-- pages/notes-edit/notes-edit.wxml -->
+
+<view class="editor-container">
+  <input class="title-input" bindinput="onTitleChange" value="{{title}}" placeholder="标题" />
+  <input class="category-input" bindinput="onCategoryChange" value="{{category}}" placeholder="分类" />
+  
+  <!--<view class="tags-container">
+    <view class="tags" wx:for="{{tags}}" wx:key="index">{{item}}</view>
+  </view>-->
+  
+  <textarea class="body-textarea" bindinput="onBodyChange" value="{{body}}" placeholder="正文" maxlength="-1" auto-height fixed="true" />
+  <view></view>
+</view>
+  
+<view class="button-container">
+  <button bindtap="scrollToTop">🔼</button>
+  <button bindtap="scrollToBottom">🔽</button>
+  <button class="save-button" bindtap="onSave">💾</button>
+</view>
